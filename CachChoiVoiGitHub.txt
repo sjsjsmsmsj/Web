@@ -8,3 +8,17 @@ Làm theo các bước có sẵn trên máy
 // git add README.md không sử dụng vì máy mình chưa  có phải tự tạo riêng mới add được
 
 // tại sao dưới màu đỏ vì git chưa được thêm các thư mục/ tập tin vào  -> git add .
+// xong rồi git commit -m " thông tin mình cần cập nhật"
+
+Bước 3:
+refresh lại là xong hihi
+
+
+// Còn sau khi các bạn làm xong rồi ấy 
+// muốn lần sau thêm các file hoặc thư mục muốn lên môi trường git hub thì cần phải sử dụng những câu lệnh này thường xuyên
+// git add * (để thêm thư mục mới)
+// git commit -m "thông tin cần cập nhật" 
+// git push 
+
+
+// ví dụ mình thêm một tập tin mới rồi push lên
