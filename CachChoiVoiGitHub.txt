@@ -25,3 +25,10 @@ refresh lại là xong hihi
 
 // còn một trường hợp bị conflict (xung đột)
 // nếu bạn tạo tập tin/ thư mục trên web mà không tạo trên máy thì bị conflict
+
+// đấy bị conflict rồi đấy vì trên web có thư mục README.md 
+// mà máy mình không có 
+
+// sử dụng lệnh git pull
+// vậy thư mục README.md về máy mình rồi 
+// giờ hết bị rồi nè hihi
