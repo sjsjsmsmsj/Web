@@ -1,0 +1,10 @@
+Bước 1: 
+Tạo 1 project online trùng tên với tên của project của máy mình
+// máy mình hiện tại là web 
+// nên mình cần tạo web
+
+Bước 2:
+Làm theo các bước có sẵn trên máy 
+// git add README.md không sử dụng vì máy mình chưa  có phải tự tạo riêng mới add được
+
+// tại sao dưới màu đỏ vì git chưa được thêm các thư mục/ tập tin vào  -> git add .

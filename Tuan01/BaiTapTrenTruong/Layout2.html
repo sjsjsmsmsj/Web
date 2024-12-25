@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-rows: auto;
+            grid-template-areas: 
+            "header header header"
+            "nav     empty      section"
+            "footer footer footer";
+        }
+        header, nav, section, footer {
+            border: 0.9px, solid, black;
+            background-color: rgba(127, 255, 212, 0.673);
+        }
+        header {
+            text-align: center;
+            grid-area: header;
+        }
+        nav {
+            padding: 0px 50px 100px 0px;
+            grid-area: nav;
+        }
+        section {
+            grid-area: section;
+        }
+        footer {
+            text-align: center;
+            grid-area: footer;
+        }
+        .empty {
+            border: 0.9px, solid, black;
+
+            grid-area: empty;
+            background-color: rgba(127, 255, 212, 0.815);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <nav>nav</nav>
+        <div class="empty"></div>
+        <section>section</section>
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>
