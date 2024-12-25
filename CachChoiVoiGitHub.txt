@@ -22,3 +22,6 @@ refresh lại là xong hihi
 
 
 // ví dụ mình thêm một tập tin mới rồi push lên
+
+// còn một trường hợp bị conflict (xung đột)
+// nếu bạn tạo tập tin/ thư mục trên web mà không tạo trên máy thì bị conflict
