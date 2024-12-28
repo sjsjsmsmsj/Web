@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="frm1" method="get">
+        <fieldset>
+            <label for="hello">First name: </label><input type="text" name="firstName" id="firstName" required value="Thinh" placeholder="Enter your first name" minlength="2" maxlength="20"><br>
+            Last name: <input type="text" name="lastName" id="lastName" autofocus><br>
+            Date of birt: <input type="date" name="dob"><br>
+    
+            Gender: 
+            <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female
+            <input type="radio" name="gender" id="other">Others<br>
+    
+            Gender: 
+            <select name="gender" id="gender">
+                <option value="vl1">Male</option>
+                <option value="v2">Female</option>
+                <option value="v3">Others</option>
+            </select>
+    
+            Gender: 
+            <input type="text" name="gender2" id="gender2" list="mylist">
+            <datalist id="mylist">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </datalist>
+    
+            Email: <input type="email" name="email" id="email"><br>
+    
+            Picture: <input type="file" name="file" id="file"><br>
+    
+            Age: <input type="number" name="age" id="age" min="0" max="150" value="20"><br>
+            Salary: <input type="range" name="salary" id="salary" min="1000" max="10000" step="50" value="2500"><br>
+    
+            Favorite color: <input type="color" name="color" id="color"><br>
+    
+        </fieldset>
+
+        Skills: <input type="checkbox" name="java" id="java">Java
+        <input type="checkbox" name="c#" id="c#">C# 
+        <input type="checkbox" name="python" id="python">Python<br>
+
+        Programming languages:
+        <select name="skill" id="skill" multiple>
+            <option value="sk1">Java</option>
+            <option value="sk2">C#</option>
+            <option value="sk3">Python</option>
+        </select>
+
+        Username: <input type="text" name="us" id="us" pattern="[a-zA-Z]{2,}" title="at least two lower charaters"><br>
+        Password: <input type="password" name="pwd" id="pwd"><br>
+
+        Comments: <textarea name="comments" id="comments" cols="30" rows="5"></textarea><br>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+        <input type="button" value="Click">
+    </form>
+</body>
+</html>

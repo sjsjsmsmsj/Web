@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <label for="head">Academic information</label><br><br>
+        <label for="degree">Degree</label>
+        <input type="text" name="dg" id="dg" list="newlist"> 
+        <datalist id="newlist">
+            <option value="HTMT">COMPUTER SYSTEM</option>
+            <option value="KHMT">COMPUTER SCIENCE</option>
+            <option value="CNTT">INFORMATION TECHNOLOGY</option>
+            <option value="KHDL">DATA SCIENCE</option>
+        </datalist>
+        <br>
+        <br>
+
+        <label type="SID">Student ID</label>
+        <input type="textarea" name="sid" id="sid">
+        <br>
+        <br>
+
+        <label for="ca">Classes attended</label>
+        <select name="ca" id="ca">
+            <option value="geography">Geography</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="english">English</option>
+        </select>
+    </fieldset>
+    
+    <fieldset>
+        <label>Personal Details</label><br><br>
+
+        <label for="name">First Name</label>
+        <input type="text" name="firstName" id="firstName">
+        <br><br>
+
+        <label for="name">Last Name</label>
+        <input type="text" name="lastName" id="lastName">
+        <br><br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="male" id="male"><label for="male">Male</label>
+        <input type="radio" name="female" id="female"><label for="female">Female</label>
+        <br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+    </fieldset>
+    <br>
+
+    <textarea name="comments" id="comments" cols="40" rows="8" placeholder="TERMS AND CONDITIONS..."></textarea>
+    <br>
+
+    <input type="submit" value="Send Form">
+    <input type="reset" value="Clear Form">
+    <iframe src="https://www.youtube.com/" frameborder="1" width="100%" height="400px"></iframe>
+</body>
+</html>

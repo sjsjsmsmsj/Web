@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hi {
+            background-color: rgba(255, 128, 0, 0.918);
+        }
+        .ha {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" cellpadding="20px" cellspacing="0.5px">
+        <tr>
+            <td>1</td>
+            <td colspan="3">2</td>
+        </tr>
+        <tr>
+            <td rowspan="3">3</td>
+            <td class="hi">4</td>
+            <td class="hi">5</td>
+            <td rowspan="2" class="ha">6</td>
+        </tr>
+        <tr>
+            <td class="hi">7</td>
+            <td class="hi">8</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="ha">9</td>
+            <td class="ha">10</td>
+        </tr>
+    </table>
+</body>
+</html>
