@@ -1,0 +1,11 @@
+body {
+    background-color: antiquewhite;
+}
+
+li {
+    color: blue;
+    text-decoration: underline;
+}
+p {
+    color: red;
+}

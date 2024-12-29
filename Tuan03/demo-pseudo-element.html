@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div {
+            width: 50%;
+            height: 400px;
+            background-color: rgb(14, 137, 137);
+        }
+        div::before {
+            content:"kkkk";
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            display: block;
+        }
+        div::after {
+            content: "hihi";
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            display: block;
+        }
+        #p2 {
+            font-weight: lighter;
+            text-transform: uppercase;
+        }
+        #p1 {
+            font-style: italic;
+            font-stretch: expanded;
+            text-decoration: overline;
+            text-align: justify;
+        }
+        h1 {
+            text-transform: uppercase;
+            /* ngang - doc - */
+            text-shadow: -15px -10px 3px blueviolet;
+        }
+        div + p {
+            color: blue;
+            text-transform: uppercase;
+            font-size:large;
+            letter-spacing: 10px;
+            line-height: 10px;
+            text-indent: 30px;
+            word-spacing: 10px;
+            direction: ltr;
+            text-decoration: underline;
+        }
+        img {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Box
+        <img src="flower.png" alt="helloWorld">
+        <h1>html</h1>
+        <p id="p1">skddskfjsdklfjskfjds</p>
+    </div>
+    <p id="p2">sjfdlskfsjfklds</p>
+</body>
+</html>

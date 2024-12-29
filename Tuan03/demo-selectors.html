@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            background-color: yellow;
+            font-style: italic;
+        }
+
+        /* 
+        p ngay sau div
+        */
+        div + p {
+            color: blue;
+            text-transform: capitalize;
+        }
+
+        /* 
+        p là con trực tiếp của thẻ div
+        */
+        div > p {
+            color: blue;
+            text-transform: uppercase;
+        }
+        p[id] {
+            color: green;
+        }
+        /* p[id=p3] {
+            text-transform: uppercase;
+        }
+        #p3 {
+            text-transform: uppercase;
+        } */
+
+        p[title ~= first] {
+            text-transform: uppercase;
+        }
+        h1:hover {
+        color:red;
+        }
+        h1:active {
+            color: violet;
+        }
+        a:link {
+            color: aqua;
+        }
+        a:visited {
+            color: yellow;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div>
+        <h1><a href="#sec5">Html</a></h1>
+        <p id="p1" title="The first para">Could you tell how to get there</p>
+        <span>
+            <h1>Css</h1>
+            <p id="p3">Cascading Style sheets</p>
+        </span>
+        <p id="p2" title="The second para">HTML is the code that is used to structure 
+            a web page and its content.
+        </p>
+    </div>
+    <p id="sec5">HTML is the code that is used to structure 
+        a web page and its content.</p>
+</body>
+
+</html>
