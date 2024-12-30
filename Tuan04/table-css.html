@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tbl {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #tbl th, #tbl td {
+            border: 1px solid red;
+            height: 30px;
+            padding-left: 5px;
+        }
+        #tbl caption {
+            font-size: 50px;
+            color: brown;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 1px -2px 2px grey;
+        }
+        #tbl tr:first-child {
+            background-color: antiquewhite
+        }
+        #tbl tr:last-child {
+            background-color: gray;
+            font-weight: bold;
+        }
+        #tbl tr:nth-child(2n) {
+            background-color: azure;;
+        }
+        #tbl2 {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #tbl2 th, #tbl2 td {
+            border: 1px solid red;
+            height: 30px;
+            padding-left: 5px;
+        }
+        #tbl2 caption {
+            font-size: 50px;
+            color: brown;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 1px -2px 2px grey;
+        }
+        #tbl2 tr:first-child {
+            background-color: antiquewhite
+        }
+        #tbl2 tr:last-child {
+            background-color: gray;
+            font-weight: bold;
+        }
+        #tbl2 tr:nth-child(2n) {
+            background-color: azure;;
+        }
+    </style>
+</head>
+<body>
+    <table id="tbl">
+        <caption>Employee Information</caption>
+        <!-- <thead> -->
+            <tr>
+                <th>No</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        <!-- </thead>
+        <tbody> -->
+            <tr>
+                <td>1</td>
+                <td>Lam</td>
+                <td>Gia</td>
+                <td>20</td>
+                <td>lafjksdjfjsd@gmail.com</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="4">Total</td>
+                <td>5</td>
+            </tr>
+        <!-- </tbody> -->
+    </table>
+    <table id="tbl2">
+        <colgroup>
+            <col style="background-color: gray;">
+            <col span="2" style="background-color: aqua;">
+        </colgroup>
+        <caption>Employee Information</caption>
+        <!-- <thead> -->
+            <tr>
+                <th>No</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        <!-- </thead>
+        <tbody> -->
+            <tr>
+                <td>1</td>
+                <td>Lam</td>
+                <td>Gia</td>
+                <td>20</td>
+                <td>lafjksdjfjsd@gmail.com</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        <!-- </tbody> -->
+    </table>
+</body>
+</html>
