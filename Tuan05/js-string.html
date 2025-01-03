@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = true;
+        let b = new Boolean(true);
+
+        let x = 10;
+        let y = new Number(22);
+
+
+        let str1 = "Lam gia thinh";
+        let str2 = new String("Dai hoc cong nghiep tphcm");
+
+        document.write("<br/>" + str2.toUpperCase());
+        document.write("<br/>" + str2.length);
+        document.write("<br/>" + str2.indexOf("D"));
+        document.write("<br/>" + str2.charAt(5));
+        document.write("<br/>" + str2.substring(8, 19));
+
+        let words = str1.split(" ");
+        words.forEach(word => console.log(word));
+        
+        let x1 = "9";
+        document.write("<br/>" + (x1 + 1));
+        document.write("<br/>" + (parseInt(x1) + 1));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
