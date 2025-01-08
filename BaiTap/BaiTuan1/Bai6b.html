@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            border: 1px solid grey;
+            padding: 10px; /* Thêm padding để tạo không gian giữa nội dung và border */
+            margin: 5px;
+        }
+        form label {
+            display: inline;
+            padding: 5px;
+            width: 300px;
+            margin-right: 20px;
+        }
+        form input, form select, form textarea {
+            margin-bottom: 5px;    /* Thêm khoảng cách dưới các phần tử input */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <div class="div">
+        <form action="get">
+            <fieldset>
+                <legend>Your message:</legend>
+                <table>
+                    <tr>
+                        <td><label for="ex">To</label> </td>
+                        <td>                <input type="text" name="ex" id="ex" placeholder="Example Cafe">                       </td>
+                    </tr>
+                    <tr>
+                        <td>                <label for="email">Your email</label></td>
+                        <td> <input type="text" name="email" id="email">                        </td>
+                    </tr>
+                    <tr>
+                        <td>  <label for="text">Message</label></td>
+                        <td>              <textarea name="text" id="text" rows="10" cols="60"></textarea>                        </td>
+                    </tr>
+                    <tr>
+                        <td>                <label for="file">Attach File</label></td>
+                        <td> <input type="file" name="file" id="file">                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+    <div class="div">
+        <fieldset>
+            <legend>How you found us:</legend></legend>
+            <label for="google">How did you hear of us</label>
+            <select name="google" id="google">
+                <option value="Google">Google</option>
+            </select>
+            <div>
+                <label>Newsletter</label>
+                <input type="checkbox" name="thinh" id="thinh">
+                <label for="">Ensure this box is checked if you would like to receive email updates</label>
+            </div>
+        </fieldset>
+      
+    </div>
+    <div>
+        <button type="submit">Send message</button>
+    </div>
+</body>
+</html>

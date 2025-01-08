@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            padding: 0px;
+            margin: 0px;
+            background-color: hsl(213, 74%, 72%);
+        }
+        img {
+            
+            max-width: 100%;
+            height: auto;
+        }
+        #comment {
+            vertical-align: top;
+        }
+        .div {
+            border-bottom: 2px solid grey;
+            padding: 10px;
+        }
+        #div2 {
+            width: 55%;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <img src="/BaiTap/img/jackson.png" alt="jackson image">
+    </div>
+    <h1>Registraition Form</h1>
+    <p>Register your Jackson Electronics product here</p>
+    <div class="div">
+        <form action="">
+            <label for="">First Name: </label> <input type="text" name="firstname" id="firstname">
+            <label for="">Last Name: </label> <input type="text" name="lastname" id="lastname">
+            <br/>
+
+            <label for="">Address #1: </label><input type="text" name="address1" id="address1">
+            <br/>
+            <label for="">Address #2: </label><input type="text" name="address2" id="address2">
+            <label for="">City: </label> <input type="text" name="city" id="city">
+            <label for="">State: </label> <input type="text" name="state" id="state">
+            <label for="">Zip: </label> <input type="text" name="zip" id="zip">
+            <br/>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="unitedstates">United States</option>
+            </select>
+        </form>
+    </div>
+    <div class="div" id="div2">
+        <form action="">
+            <label for="product">Product: </label>
+            <select name="product" id="product">
+                <option value="ScanMaster">ScanMaster</option>
+            </select>
+            <label for="">Date Purchased: </label> <input type="text" name="date" id="date">
+            <label for="">Serial#:</label> <input type="text" name="serial" id="serial">
+            <table>
+                <tr>
+                    <td colspan="2" rowspan="3">Used for:</td>
+                    <td><input type="radio" name="home" id="home">Home</td>
+                    <td><input type="radio" name="edu" id="edu">Educational Institution</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="business" id="business">Business</td>
+                    <td><input type="radio" name="other" id="other">Other</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="go" id="go">Government</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td colspan="2" rowspan="2">System (check all that apply):</td>
+                    <td><input type="checkbox" name="windows" id="windows">Windows</td>
+                    <td><input type="checkbox" name="unix" id="unix">UNIX</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="ma" id="ma">Macintosh</td>
+                    <td><input type="checkbox" name="other" id="other">Other</td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+    <div id="div3">
+        <table>
+            <tr>
+                <td rowspan="4" colspan="4" id="comment">Comments?:</td>
+                <td><textarea name="text" id="text" cols="50" rows="5"></textarea></td>
+            </tr>
+        </table>
+        <button type="submit">Click to register</button>
+        <button type="reset">Click to cancel</button>
+    </div>
+</body>
+</html>
