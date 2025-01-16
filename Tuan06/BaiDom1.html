@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p id="pa">Xin chào!</p>
+    <button id="bu" onclick="">an</button>
+    <button id="hello">hien</button>
+    <script>
+        let para = document.getElementById("pa");
+        para.textContent = "Chào mừng đến với DOM!";
+        
+        let but = document.getElementById("bu");
+        
+        but.addEventListener("click", function() {
+            para.style.color = "white";
+        })
+        
+        let he = document.getElementById("hello");
+        he.addEventListener("click", function() {
+            para.style.color = "black";
+        })
+    </script>   
+</body>
+</html>

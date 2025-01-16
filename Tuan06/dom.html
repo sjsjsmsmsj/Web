@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
-    
+    <h1>hello </h1>
+    <p id="pa">Đây là đoạn văn.</p>
+    <button id="btn">nhan</button>
+    <script>
+        let para = document.getElementById("pa");
+        alert(para.textContent)
+        para.textContent = "Hello world";
+        para.style.color = "red";
+        
+        let button = document.getElementById("btn");
+        button.addEventListener("click", () => {
+            alert("Ban da nhap vao");
+        })
+        const newPara = document.createElement("p");
+        newPara.textContent = "KKkk";
+        document.body.appendChild(newPara);
+    </script>
 </body>
 </html>

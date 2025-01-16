@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bu">Nhấn vào đây</button>
+    <div id="count-display"></div> <!-- Phần tử hiển thị số lần nhấn nút -->
+    
+    <script>
+        const button = document.getElementById('bu');
+        const displayDiv = document.getElementById('count-display'); // Lấy phần tử hiển thị số lần nhấn
+        let count = 0;
+
+        button.addEventListener('click', function() {
+            count++;  // Tăng biến đếm
+            const para = document.createElement('p'); // Tạo phần tử <p> mới
+            para.textContent = 'Số lần nhấn: ' + count;  // Gán nội dung cho <p>
+            displayDiv.appendChild(para);  // Thêm phần tử <p> vào <div> 
+        });
+    </script>
+</body>
+</html>

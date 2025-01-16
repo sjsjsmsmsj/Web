@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="/BaiTap/img/back copy.jpg" alt="" id="image">
+    <button id="bu">Change picture</button>
+    <script>
+        let img = document.getElementById('image')
+        let button = document.getElementById('bu');
+        button.addEventListener('click', function() {
+            if (img.src.includes("/BaiTap/img/back.jpg")) {
+                image.src = "/BaiTap/img/background.jpg"
+            } else {
+                image.src ="/BaiTap/img/back.jpg"
+            }
+        })
+    </script>
+</body>
+</html>

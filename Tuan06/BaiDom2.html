@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul">
+        <!-- Danh sách sẽ được thêm vào ở đây -->
+    </ul>
+    <input type="text" id="input">
+    <button id="bu">
+        Thêm
+    </button>
+
+    <button id="hien">
+        Hiện
+    </button>
+
+    <script>
+        let input = document.getElementById('input');  // Lấy ô input
+        let ul = document.getElementById('ul');  // Lấy danh sách
+        let button = document.getElementById('bu');  // Lấy nút
+        let hien = document.getElementById('hien');
+        button.addEventListener('click', function() {
+            let li = document.createElement('li');  // Tạo phần tử li mới
+            li.textContent = input.value;  // Lấy giá trị từ ô input và gán cho phần tử li
+            ul.appendChild(li);  // Thêm phần tử li vào danh sách ul
+            input.value = '';  // Xóa nội dung ô input sau khi thêm
+        });
+        hien.addEventListener('click', function() {
+            ul.removeChild(ul.lastChild)
+        })
+    </script>
+</body>
+</html>
