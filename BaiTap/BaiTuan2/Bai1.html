@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            border-bottom: 1px solid grey;
+        }
+        h1, a {
+            text-align: center;
+            color: red;
+        }
+        p {
+            color: rebeccapurple;
+            margin-left: 50px;
+        }
+        .div2 {
+            color: #ad9494;
+            background-color: #cde6b3;
+        }
+        #honey {
+            color: #b1af0e;
+        }
+        table {
+            margin-left: 100px;
+            border-spacing: 0; /* Loại bỏ khoảng cách giữa các ô */
+            width: 70%;
+        }
+
+        td {
+            padding: 10px; /* Khoảng cách bên trong ô */
+            text-align: center; /* Canh giữa nội dung */
+            vertical-align: middle; /* Đảm bảo nội dung nằm giữa theo chiều dọc */
+        }
+
+        .separator {
+            width: 2px; /* Đảm bảo chiều rộng nhỏ gọn */
+            border-left: 2x solid rgb(63, 103, 150); /* Thêm đường viền để tạo dấu | */
+            height: 100%; /* Đảm bảo chiều cao đầy đủ */
+        }
+
+        img {
+            display: block; /* Giúp hình ảnh không bị lệch dòng */
+        }
+
+        #po {
+            background-color: #c07b7b;
+            padding: 3px 0px;
+        }
+        #div3 ul li {
+            margin: 10px;
+            padding: 0px;
+            border-radius: 20px;
+            border: 1px solid pink;
+            background-color: pink;
+        }
+        #div3 ul {
+            float: left;
+        }
+        #kk {
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="div" id="top">
+        <h1><i>EXAMPLE CAFE MENU</i></h1>
+    </div>
+    <div class="div">
+
+        <div class="div" id="po">
+            <table>
+                <tr>
+                    <td>
+                        <img src="/BaiTap/img/icons8-home-50.png" alt="icon" width="15px">
+                    </td>
+                    <td class="separator"></td> <!-- Dùng cột chứa đường viền thay cho dấu | -->
+                    <td class="a">STATER</td>
+                    <td class="separator"></td>
+                    <td class="a">MAIN COURSES</td>
+                    <td class="separator"></td>
+                    <td class="a">DESSERTS</td>
+                    <td class="separator"></td>
+                    <td>
+                        <input type="text" name="txt" id="txt">
+                        <button type="submit">Go</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="div1" id="div3">
+        <ul type="none">
+            <li>hello</li>
+            <li>hi</li>
+            <li>dkfjd</li>
+            <li>dkfdjs</li>
+            <li>dkfjdsj</li>
+        </ul>
+    </div>
+    <div>
+        <div class="div1" id="kk">
+            <h2>Starter</h2>
+        </div>
+        
+        <ul>
+            <li>Chesnut and Mushroom Goujons (<a href="#">v</a>)</li>
+            <li>Goat Cheese(<a href="#">v</a>)</li>
+            <li id="honey">HONEY SOY CHICKEN KEBABS(<a href="#">V</a>)</li>
+            <li>Seafood Salad(<a href="#">v</a>)</li>
+        </ul>
+        <a href="#top">Back to Top</a>
+    </div>
+    <div>
+        <div class="div2">
+            <h2>Desserts</h2>
+        </div>
+        <ul>
+            <li>Lemon Sorbet  (<a href="#">v</a>)</li>
+            <li>Chocolate Mud Pie (<a href="#">v</a>)</li>
+            <li>Pecan Pie(<a href="#">v</a>)</li>
+            <li>Selection of fine Cheeses from Around the World(<a href="#">v</a>)</li>
+        </ul>
+        <a href="#top">Back to Top</a>
+    </div>
+</body>
+</html>

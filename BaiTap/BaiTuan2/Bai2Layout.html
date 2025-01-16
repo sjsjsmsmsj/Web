@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 img {
+            float: left;
+            margin-right: 30px;
+        }
+        #div1 {
+            padding: 20px;
+            background-color: grey;
+            color: white;
+        }
+        #div2 {
+            clear: both;
+            background-color: hwb(0 51% 40% / 0.906);  /* Màu nền cho toàn bộ div2 */
+            display: flex;            /* Sử dụng flexbox để căn chỉnh các mục trên cùng một dòng */
+        }
+
+        #div2 ul {
+            margin: 0;                /* Loại bỏ margin mặc định */
+            padding: 0;               /* Loại bỏ padding mặc định */
+            display: flex;            /* Dùng flexbox để sắp xếp các mục theo chiều ngang */
+        }
+
+        #div2 ul li {
+            padding: 15px;
+            margin-right: 20px;        /* Khoảng cách giữa các mục */
+            text-align: center;        /* Căn giữa văn bản trong các mục */
+        }
+
+        #div3 {
+            clear: both;
+        }
+        #div3, #div4, #div5 {
+            float: left;
+            width: 30%;
+            margin-right: 20px; /* Tạo khoảng cách giữa các div */
+        }
+        #div6 {
+            clear: both;
+        } 
+        #div2 ul li {
+            color: white;
+        }
+        .h3 {
+            color: red;
+        }
+        #k1 {
+            padding-bottom: 120px;
+        }
+        #q1 {
+            padding-bottom: 160px;
+        }
+        #div6 {
+            padding-top: 0.5px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="div" id="div1">
+        <img src="/BaiTap/img/clock.png" alt="">
+        <h1>YOKO'S KITCHEN</h1>
+        <h3>JAPANESE COOKING CLASSES</h3>
+    </div>
+    <div class="div" id="div2">
+        <ul type="none">
+            <li style="color:black">home</li>
+            <li>classes</li>
+            <li>catering</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div class="div" id="div3">
+        <img src="/BaiTap/img/bokchoi.png" alt="">
+        <p>Bok Choi</p>
+        <img src="/BaiTap/img/sance.png" alt="">
+        <p>Teyaki Sance</p>
+    </div>
+    <div class="div" id="div4">
+        <div id="q1">
+            <h2>Japanese Vegetarian</h2>
+            <h3 class="h3">Five week course in London</h3>
+        </div>
+        <div id="q2">
+            <h2>Sauces Masterclass</h2>
+            <h3 class="h3">One day workshop</h3>
+        </div>
+    </div>
+    <div class="div" id="div5">
+        <div id="k1" class="h3">
+            <h2>Popular Recipes</h2>
+            <ul type="none">
+                <li>ksdfjsdif</li>
+                <li>sdkfjksdf</li>
+                <li>dsjfdsj</li>
+                <li>ksdkdsfks</li>
+            </ul>
+        </div>
+        <div id="k2">
+            <h2 class="h3">Contact</h2>
+            <ul type="none">
+                <li>Yoko's kitchen</li>
+                <li>27 Redchurch Street</li>
+                <li>Shoreditch</li>
+                <li>London E 7 DP</li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="div6" class="div">
+        <p>&#169; Hello world</p>
+    </div>
+</body>
+</html>

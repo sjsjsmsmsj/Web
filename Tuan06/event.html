@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-row {
+            margin: 10px;
+        }
+        label {
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            // let myId = document.getElementById('txtNumber');
+            // console.log(myId);
+            let tags = document.getElementsByTagName("input")
+            for (let element of tags) {
+                console.log(element.id)
+            }
+        }
+        function compute(form) {
+            let answer = confirm("Are you sure?")
+            if (answer) {
+                let rs = eval(form.txtExpression.value);
+                form.txtResult.value = rs;
+            } else {
+                alert("Please come back again")
+            }
+        }
+        function checkIsANumber(myValue) {
+            if (myValue.trim() == "") {
+                alert("Enter a number");
+                return false;
+            } 
+            if (isNaN(myValue)) {
+                alert("Please enter numeric value");
+                return false;
+            }
+            alert("Thank you");
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <div class="form-row">
+            <label for="txtExpression">Enter a expression</label>
+            <input type="text" id="txtExpression" autocomplete="off">
+        </div>
+        <div class="form-row">
+            <label for="txtResult">Result:</label>
+            <input type="text" id="txtResult" readonly>
+        </div>
+        <div class="form-row">
+            <button type="button" onclick="compute(this.form)">Calculate</button>
+        </div>
+        <div class="form-row">
+            <label for="txtNumber">Please enter a number:</label>
+            <input type="text" id="txtNumber" onchange="checkIsANumber(this.value)" autocomplete="off">
+        </div>
+    </form>
+</body>
+</html>

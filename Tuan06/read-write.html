@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change(state) {
+            let myLamp = document.getElementById('lamp');
+            let p = document.getElementById('p1');
+            myLamp.src = "light-" + state + ".png";
+            p.innerHTML = "The lamp is " + state
+            if (state == 'on') {
+                p.style.color = "red";
+            } else {
+                p.style.color = "black"
+            }
+        }
+    </script>
+</head>
+<body>
+    <img id="lamp" src="light-on.png" alt="">
+    <p id="p1">The lamp is off</p>
+    <button type="button" onclick="change('on')">Turn on</button>
+    <button type="button" onclick="change('off')">Turn off</button>
+</body>
+</html>
